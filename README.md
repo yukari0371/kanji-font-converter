@@ -11,7 +11,7 @@ import kc from "kanji-font-converter";
     if (result.status === "error") {
         console.error("Error:", result.message);
     } else {
-        console.error(result);
+        console.log(result);
     }
 })();
 ```
