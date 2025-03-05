@@ -8,4 +8,3 @@ export type converterResult =
 };
 
 export type fontPairsType = [ string, string ];
-
