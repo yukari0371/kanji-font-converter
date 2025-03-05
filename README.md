@@ -1,7 +1,7 @@
 # kanji-font-converter
 Kanji new font / old font converter
 
-### UAfw
+### Usage
 ### Example
 ```ts
 import kc from "kanji-font-converter";
