@@ -20,6 +20,6 @@ import kc from "kanji-font-converter";
 ```
 {
     status: 'success',
-    convertedText: 'コーヒーを飲んで脳が覺醒しています。'
+    convertedText: 'コーヒーを飮んで腦が覺醒しています。'
 }
 ```
