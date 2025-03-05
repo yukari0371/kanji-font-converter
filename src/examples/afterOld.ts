@@ -5,6 +5,6 @@ import { onkc } from "..";
     if (result.status === "error") {
         console.error("Error:", result.message);
     } else {
-        console.error("Converted:", result.convertedText);
+        console.log("Converted:", result.convertedText);
     }
 })();
