@@ -1,2 +1,3 @@
 import { converter } from "./utils/converter";
-export const kc = { converter };
+const kc = { converter };
+export default kc;
