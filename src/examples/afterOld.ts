@@ -1,7 +1,7 @@
-import { onkc } from "..";
+import { kc } from "..";
 
 (async() => {
-    const result = await onkc.converter("old", "コーヒーを飲んで脳が覚醒しています。");
+    const result = await kc.converter("new", "コーヒーを飲んで脳が覺醒しています。");
     if (result.status === "error") {
         console.error("Error:", result.message);
     } else {
