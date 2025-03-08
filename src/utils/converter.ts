@@ -100,10 +100,10 @@ const fontPairs: fontPairsType[] = [
 const newFonts: string[] = fontPairs.map((pair) => pair[0]);
 const oldFonts: string[] = fontPairs.map((pair) => pair[1]); 
 
-export const converter = async (after: string, text: string): Promise<converterResult> => {
-    return new Promise((resolve, reject) => {
+export async function converter(after: string, text: string): Promise<converterResult> {
+    return new Promise((resolve) => {
         if (after !== "new" && after !== "old") {
-            return reject({
+            return resolve({
                 status: "error",
                 message: "The value of after must be 'new' or 'old'."
             });
@@ -141,7 +141,7 @@ export const converter = async (after: string, text: string): Promise<converterR
                 }
             break;
             default:
-                reject({
+                resolve({
                     status: "error",
                     message: "An unexpected error has occurred."
                 });
