@@ -1,3 +1,6 @@
+/** Functions */
+import { KcError } from "../error";
+
 /** Types */
 import { 
     fontPairsType,
@@ -102,12 +105,8 @@ const oldFonts: string[] = fontPairs.map((pair) => pair[1]);
 
 export async function converter(after: string, text: string): Promise<converterResult> {
     return new Promise((resolve) => {
-        if (after !== "new" && after !== "old") {
-            return resolve({
-                status: "error",
-                message: "The value of after must be 'new' or 'old'."
-            });
-        }
+        if (after !== "new" && after !== "old")
+            throw new KcError("The value of after must be 'new' or 'old'.");
         let convertedText = "";
         switch (after) {
             case "new":
