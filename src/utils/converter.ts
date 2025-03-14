@@ -146,7 +146,7 @@ export async function converter(after: string, text: string): Promise<converterR
                 });
             break;
         }
-        return resolve({
+        resolve({
             status: "success",
             convertedText: convertedText
         });
