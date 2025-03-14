@@ -140,7 +140,7 @@ export async function converter(after: string, text: string): Promise<converterR
                 }
             break;
             default:
-                resolve({
+                return resolve({
                     status: "error",
                     message: "An unexpected error has occurred."
                 });
