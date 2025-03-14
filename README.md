@@ -2,7 +2,6 @@
 Kanji new font / old font converter
 
 ### Usage
-### Example
 ```ts
 import { kc } from "kanji-font-converter";
 
